@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VL6-rZ-z1U">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Email Details-->
+        <scene sceneID="qjI-y4-XpN">
+            <objects>
+                <viewController id="VL6-rZ-z1U" customClass="EmailDetailsViewController" customModule="Email" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LKA-nV-rGj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-i4-qQK">
+                                <rect key="frame" x="139" y="323" width="97.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XOh-i4-qQK" firstAttribute="centerY" secondItem="LKA-nV-rGj" secondAttribute="centerY" id="F0n-tI-YrZ"/>
+                            <constraint firstItem="XOh-i4-qQK" firstAttribute="centerX" secondItem="LKA-nV-rGj" secondAttribute="centerX" id="ngP-fZ-xYJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="79b-rh-QcB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Email Details" id="j2S-ax-oEc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDN-16-yYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="-551"/>
+        </scene>
+    </scenes>
+</document>
