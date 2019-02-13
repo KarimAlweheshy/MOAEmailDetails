@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import Networking
 
 protocol EmailDetailsInteractorType {
 }
 
 final class EmailDetailsInteractor: EmailDetailsInteractorType {
-    fileprivate let dataProvider: DataProvider
+    fileprivate let networking: NetworkingType
     
-    init(dataProvider: DataProvider) {
-        self.dataProvider = dataProvider
+    init(networking: NetworkingType) {
+        self.networking = networking
     }
 }

@@ -17,9 +17,6 @@
 		F66EB4492211CDBD00D177C5 /* EmailDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EB4482211CDBD00D177C5 /* EmailDetailsPresenter.swift */; };
 		F66EB44B2211CDC500D177C5 /* EmailDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EB44A2211CDC500D177C5 /* EmailDetailsViewController.swift */; };
 		F66EB44D2211CDCE00D177C5 /* EmailDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EB44C2211CDCE00D177C5 /* EmailDetailsInteractor.swift */; };
-		F66EB45D2211CF1A00D177C5 /* Email.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F66EB45B2211CF1A00D177C5 /* Email.xcdatamodeld */; };
-		F66EB45F2211D13D00D177C5 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EB45E2211D13D00D177C5 /* DataProvider.swift */; };
-		F66EB46E2211D21600D177C5 /* EmailPersistanceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EB46D2211D21600D177C5 /* EmailPersistanceContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +57,7 @@
 		F66EB4482211CDBD00D177C5 /* EmailDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDetailsPresenter.swift; sourceTree = "<group>"; };
 		F66EB44A2211CDC500D177C5 /* EmailDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDetailsViewController.swift; sourceTree = "<group>"; };
 		F66EB44C2211CDCE00D177C5 /* EmailDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDetailsInteractor.swift; sourceTree = "<group>"; };
-		F66EB45C2211CF1A00D177C5 /* Email.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Email.xcdatamodel; sourceTree = "<group>"; };
-		F66EB45E2211D13D00D177C5 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		F66EB46A2211D1A100D177C5 /* EmailDetails.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EmailDetails.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F66EB46D2211D21600D177C5 /* EmailPersistanceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPersistanceContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +115,6 @@
 			children = (
 				F66EB4102211CCD000D177C5 /* Info.plist */,
 				F66EB4302211CD2F00D177C5 /* Module.swift */,
-				F66EB45A2211CF0000D177C5 /* Entities */,
 				F66EB4352211CD4800D177C5 /* EmailDetails */,
 			);
 			path = EmailDetails;
@@ -147,16 +140,6 @@
 				F66EB44C2211CDCE00D177C5 /* EmailDetailsInteractor.swift */,
 			);
 			path = EmailDetails;
-			sourceTree = "<group>";
-		};
-		F66EB45A2211CF0000D177C5 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				F66EB45B2211CF1A00D177C5 /* Email.xcdatamodeld */,
-				F66EB45E2211D13D00D177C5 /* DataProvider.swift */,
-				F66EB46D2211D21600D177C5 /* EmailPersistanceContainer.swift */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		F66EB46B2211D1B000D177C5 /* Frameworks */ = {
@@ -298,11 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F66EB46E2211D21600D177C5 /* EmailPersistanceContainer.swift in Sources */,
-				F66EB45D2211CF1A00D177C5 /* Email.xcdatamodeld in Sources */,
 				F66EB4472211CDB000D177C5 /* EmailDetailsRouter.swift in Sources */,
 				F66EB4492211CDBD00D177C5 /* EmailDetailsPresenter.swift in Sources */,
-				F66EB45F2211D13D00D177C5 /* DataProvider.swift in Sources */,
 				F66EB44D2211CDCE00D177C5 /* EmailDetailsInteractor.swift in Sources */,
 				F66EB4312211CD2F00D177C5 /* Module.swift in Sources */,
 				F66EB44B2211CDC500D177C5 /* EmailDetailsViewController.swift in Sources */,
@@ -569,19 +549,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F66EB45B2211CF1A00D177C5 /* Email.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F66EB45C2211CF1A00D177C5 /* Email.xcdatamodel */,
-			);
-			currentVersion = F66EB45C2211CF1A00D177C5 /* Email.xcdatamodel */;
-			path = Email.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F66EB4032211CCD000D177C5 /* Project object */;
 }

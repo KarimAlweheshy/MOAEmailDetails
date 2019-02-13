@@ -10,10 +10,11 @@ import UIKit
 import Networking
 
 final class EmailDetailsBuilder: NSObject {
-    static func make(dataProvider: DataProvider, resultCallback: @escaping (Result<EmailResponse>) -> Void) -> EmailDetailsViewController {
+    static func make(networking: NetworkingType,
+                     resultCallback: @escaping (Result<EmailResponse>) -> Void) -> EmailDetailsViewController {
         let storyboard = UIStoryboard(name: "EmailDetails", bundle: Bundle(for: self))
         let viewController = storyboard.instantiateInitialViewController() as! EmailDetailsViewController
-        let interactor = EmailDetailsInteractor(dataProvider: dataProvider)
+        let interactor = EmailDetailsInteractor(networking: networking)
         let router = EmailDetailsRouter()
         let presenter = EmailDetailsPresenter(router: router, interactor: interactor)
         viewController.presenter = presenter
